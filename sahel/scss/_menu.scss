@@ -1,0 +1,61 @@
+@import "./variables";
+
+#menu-btn {
+  height: 4rem;
+  width: 4rem;
+  background-color: black;
+  border-radius: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  padding: 1rem;
+  @include center-stuff;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  #menu-btn-icon {
+    font-size: 2rem;
+    color: $secondary-color;
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  @include center-stuff;
+  flex-direction: column;
+  background-color: $primary-color;
+  transform: translateY(100%);
+  @include ease-transitions(250ms);
+  z-index: 1;
+  .nav-links {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: $secondary-color;
+  }
+  &.open {
+    transform: translateY(0);
+  }
+}
+
+@include media-md {
+  #menu-btn {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 3rem;
+    padding: 1.5rem;
+    bottom: 2rem;
+    right: 2rem;
+    #menu-btn-icon {
+      font-size: 3rem;
+    }
+  }
+  .nav {
+    .nav-links {
+      font-size: 1.5rem;
+    }
+  }
+}

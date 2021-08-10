@@ -1,0 +1,21 @@
+$primary-color: #01294d;
+$secondary-color: rgb(243, 244, 246);
+$curvature: 1.5rem;
+$base-padding: 2rem;
+$content-font-size-mobile: 1.1rem;
+
+@mixin center-stuff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin ease-transitions($duration: 500ms) {
+  transition: all $duration ease-in-out;
+}
+
+@mixin media-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}

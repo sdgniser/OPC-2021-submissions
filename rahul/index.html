@@ -1,0 +1,537 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+    <head>
+      <meta name="robots" content="noindex">
+
+      <title>Outreach at NISER</title>
+
+      <style>
+
+        /* CSS for body */
+        body {
+          height: 100%;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: rgb(255, 255, 255);
+            }
+
+
+        /* CSS for Header */
+          .header {
+            margin-top: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
+            padding-top: 5px;
+            clear: both;
+            height: 120px;
+            background-color:rgb(255, 255, 255);
+          }
+
+          .logo {
+              padding-left: 5%;
+              float: left;
+              max-width: 110px;
+              }
+
+          .imglogo {
+              width: 100%;
+              }
+
+
+          h1 {
+            text-shadow: 0 0 3px #ffbb00, 0 0 6px #50f896;
+            font-family:'Arial Narrow', Arial, sans-serif;
+            vertical-align: middle;
+            padding-right: 10%;
+            font-size: 2.3rem;
+            text-align: center;
+            color: rgb(247, 9, 80);
+          }
+
+
+          /* CSS for nevigation bar */
+          .topnav {
+              position: sticky;
+              top: 0;
+              margin-left: -8px;
+              margin-right: -8px;
+              margin-top: -1px;
+              margin-bottom: 10px;
+              overflow: hidden;
+              background-color: rgb(24, 24, 24);
+            }
+
+            .dropdown {
+              display: none;
+              position: sticky;
+              top: 0;
+              margin-left: -8px;
+              margin-right: -8px;
+              margin-top: -1px;
+              margin-bottom: 10px;
+              background-color: #333;
+            }
+
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #242121;
+              width: 100%;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+
+            .dropdown-content a {
+              display: block;
+              color: #f2f2f2;
+              text-align: center;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-left: 10px;
+              padding-right: 10px;
+              width: 100%;
+              text-decoration: none;
+            }
+
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+
+            .dropdown-content a:hover {
+              background-color: #ddd;
+              color: rgb(255, 0, 0);
+            }
+
+
+            /* Style the topnav links */
+            .topnav a {
+              float: left;
+              display: block;
+              color: #f2f2f2;
+              text-align: center;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-left: 2%;
+              padding-right: 2%;
+              text-decoration: none;
+            }
+
+            /* Change color on hover */
+            .topnav a:hover {
+              background-color: #ddd;
+              color: rgb(255, 0, 0);
+            }
+
+            @media screen and (max-width: 610px) {
+            .topnav {
+              display: none;
+            }
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+            .dropdown{
+              display:block;
+            }
+            }
+
+
+
+            /* CSS for content boxes */
+            .card {
+              border-radius: 10px;
+              padding: 10px;
+            }
+
+            .c1 {
+              margin-top: 8px;
+              margin-bottom: 8px;
+              background-color: rgb(142, 255, 240);
+            }
+
+            .c2 {
+              margin-top: 8px;
+              margin-bottom: 8px;
+              background-color: rgb(243, 221, 174);
+            }
+
+            .c3 {
+              margin-left: 9%;
+              margin-right: 9%;
+              margin-top: 8px;
+              margin-bottom: 8px;
+              background-color:rgb(255, 151, 66);
+            }
+
+            .topic {
+              margin-top: -10px;
+              padding-left: 10px;
+            }
+
+            .text {
+              overflow: auto;
+              text-align: justify;
+              text-justify: inter-word;
+              background-color: rgb(255, 255, 255);
+              border-radius: 5px;
+              padding: 7px 15px;
+            }
+
+            .t1 {
+              border-left:6px solid rgb(100, 218, 100);
+            }
+
+            .t2 {
+              border-left: 5px solid rgb(238, 87, 87);
+            }
+
+
+            /* Create two unequal columns that floats next to each other */
+            /* Left column */
+            .leftcolumn {
+              float: left;
+              width: 67%;
+              overflow: auto;
+            }
+
+
+            /* Right column */
+            .rightcolumn {
+              right: 10px;
+              float: right;
+              width: 30%;
+              padding-left: 20px;
+            }
+
+
+
+            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+                height: auto;
+                position:static;
+            }
+
+            .c3 {
+              margin-left: 0%;
+              margin-right: 0%;
+            }
+
+            }
+
+
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+
+
+            /*  date event and announcement */
+
+            .date {
+              margin: 5px;
+            }
+
+            .event {
+              border-radius: 5px;
+              padding: 7px;
+              background-color: rgb(145, 238, 117);
+              margin-bottom: 15px;
+            }
+
+            .news {
+              border-radius: 5px;
+              padding: 7px;
+              background-color: rgb(145, 238, 117);
+              margin-top:5px;
+              margin-bottom: 8px;
+            }
+
+
+            /* CSS for gallery section */
+
+            div.gallery {
+              margin: 5px;
+              border: 1px solid #ccc;
+              float: left;
+              width: 200px;
+            }
+
+            div.gallery:hover {
+              border: 1px solid #777;
+            }
+
+            div.gallery img {
+              width: 100%;
+              height: auto;
+            }
+
+            div.desc {
+              padding: 15px;
+              text-align: center;
+            }
+
+            #hfix {
+              overflow-x: scroll;
+              overflow-y:hidden;
+              max-height: 290px;
+            }
+
+
+            /* Create two unequal columns that floats next to each other */
+            /* Left column */
+            .levent {
+              float: left;
+              width: 48%;
+              overflow: auto;
+            }
+
+            /* Right column */
+            .rnews {
+              overflow: auto;
+              right: 10px;
+              float: right;
+              width: 48%;
+              padding-left: 20px;
+            }
+
+
+            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 550px) {
+            .levent, .rnews {
+                width: 100%;
+                height: auto;
+                padding: 0;
+            }
+            }
+
+            @media screen and (min-width: 801.1px) {
+            .levent, .rnews {
+                width: 100%;
+                height: auto;
+                padding: 0;
+            }
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+
+      </style>
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    </head>
+
+    <body class="body">
+
+      <!-- Header -->
+
+      <div class="header">
+        <div class="logo">
+            <img class="imglogo" src="logo-min.png" alt="NISER logo">
+        </div>
+          <h1>Outreach at NISER</h1>
+      </div>
+
+
+      <!-- Nevigation Bar -->
+
+      <div class="topnav">
+        <a href="#">Open day</a>
+        <a href="#">Educational visits of schools</a>
+        <a href="#">Vigyan Prathiba project</a>
+      </div>
+
+      <div class="dropdown">
+        <p style="text-align: center;color: #ffffff;padding: 10px;margin-top: 0px;margin-bottom: 0px;">Nevigation Menu   <i class="material-icons-outlined" style="padding-left: 15px;vertical-align: middle; margin: -3px;">expand_more</i></p>
+        <div class="dropdown-content">
+        <a href="#">Open day</a>
+        <a href="#">Educational visits of schools</a>
+        <a href="#">Vigyan Prathiba project</a>
+        </div>
+      </div>
+
+
+      <!-- Content -->
+
+      <div class="table">
+
+
+        <div class="rightcolumn">
+          <div class="levent">
+          <div class="card c2">
+            <div class="topic">
+                <h3>Event calendar</h3>
+                <p id="date_today", style="text-align: right;margin-top: -20px;color: tomato; font-weight:bold;"></p>
+
+            </div>
+
+            <div class="text t2">
+
+                <div class="date">
+                  <b>Mon Aug 9 2021</b>
+                </div>
+                <div class="event">
+                  Muharram or Ashura
+                </div>
+
+                <!-- Repeat this set of code to add a new event -->
+
+                <!-- Start here -->
+                <div class="date">
+                  <b>Fri Aug 13 2021</b>
+                </div>
+                <div class="event">
+                  Sample event
+                </div>
+                <!-- Endes here -->
+
+
+            </div>
+          </div>
+        </div>
+
+
+          <div class="rnews">
+          <div class="card c2">
+            <div class="topic">
+                <h3>News and announcements</h3>
+
+            </div>
+
+            <div class="text t2">
+              <div class="news">
+                OPC result to be announced on 15th Aug.
+              </div>
+              <div class="news">
+                This is a sample announcement.
+              </div>
+
+            <!-- Repeat this set of code to add another News or announcements -->
+
+            <!-- Start here -->
+              <div class="news">
+                This is a sample news.
+              </div>
+            <!-- Ends here -->
+
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+
+        <!-- Left column -->
+
+        <div class="leftcolumn">
+          <div class="card c1">
+              <div class="topic">
+                  <h3>About us</h3>
+
+              </div>
+
+              <div class="text t1">
+                  <p>Science outreach is all about communicating the
+                    importance and ideologies of Science with the public.
+                    The general idea is to spread Science among the school
+                    students and teachers in a captivating way that will be
+                    encouraging enough for them to think about a future in research or education.</p>
+
+                    <p>NISER is mindful of its social responsibilities
+                      and has been reaching out to students and teachers
+                    to motivate them in their Scientific pursuit.</p>
+              </div>
+          </div>
+
+
+
+          <div class="card c1">
+              <div class="topic">
+                  <h3>Our vision</h3>
+              </div>
+
+              <div class="text t1">
+                  <p>We believe that an exposure at the right time in one's
+                    career can ignite right minds in learning and their scientific
+                    pursuit. With this in mind we invite teachers and students to
+                    have a glimpse of the research environment at NISER and expose
+                    them to the concept of "Learning by doing". NISER outreach
+                    activities provide a single window for facilities such as online
+                    and offline education from school to undergraduate level, research
+                    programs, online portal for various learning units for schools,
+                    online teachers' webinars, online and on-site teachers' workshops etc.</p>
+
+                   <p> NISER Open day program is introduced to invite people from various
+                    institutions/ schools can to visit NISER in order to have a glimpse
+                    of the scientific exposure along with learning. NISER Educational trips
+                    involve schools and college visits in different departments at NISER and
+                    interact with the Scientific officers. NISER hosts the Odisha chapter of
+                    the Vigyan Pratibha project in collaboration with the Institute of Physics,
+                    Bhubaneswar and Homi Bhabha Centre for Science Education, Mumbai and wherein
+                    teachers' training workshops are being conducted.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="table">
+          <div class="leftcolumn" style="width: 100%;margin-bottom: 15px;">
+              <div class="card c3">
+                <div class="topic">
+                    <h3>Gallery section</h3>
+                </div>
+
+                <div class="text", id="hfix">
+                  <table align="center">
+                    <tr>
+                      <td>
+                  <div class="gallery">
+                    <a target="_blank" href="sample.jpg">
+                      <img src="sample.jpg" alt="outreach" width="500" height="300">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="gallery">
+                    <a target="_blank" href="sample.jpg">
+                      <img src="sample.jpg" alt="outreach" width="500" height="300">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="gallery">
+                    <a target="_blank" href="sample.jpg">
+                      <img src="sample.jpg" alt="NISER_logo" width="500" height="300">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                  </div>
+                </td>
+                </tr>
+                </table>
+                </div>
+              </div>
+              </div>
+            </div>
+
+        <script>
+          const d = new Date();
+          document.getElementById("date_today").innerHTML = d.toDateString();
+        </script>
+
+      </body>
+</html>

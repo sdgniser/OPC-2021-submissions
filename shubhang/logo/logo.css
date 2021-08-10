@@ -1,0 +1,21 @@
+/* #logo{
+  position: relative;
+  width:100%;
+} */
+.logo {
+  position: absolute;
+  top:0px; left:50%;
+  width: 100px; height: 100px;
+  z-index: 103;
+}
+#logo2{
+  z-index: 102;
+}
+.banner{
+  background-color: #223a5f;
+  position: absolute;
+  top:45px;
+  height:10px;
+  width: 100%;
+  z-index: 101;
+}

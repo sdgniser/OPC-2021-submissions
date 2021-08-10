@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <link href="styles/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/51158303ea.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" href="niser_logo.png">
+    <title>NISER | Outreach Page</title>
+    <link rel=icon type=image/png sizes=32x32 href="niser_logo.png">
+    <meta name="description" content="Home page for NISER Outreach Committee">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand"  target="_blank" href="https://www.niser.ac.in/">
+                        <img id="topLogo" class="d-inline-block align-text-top" src="niser_logo.png" alt="">
+                    </a>
+                </div>
+            </nav>
+            <a class="navbar-brand" href="#">
+                <h1 style="font-size: 25px;">NISER | Outreach Page</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" onclick="makeCross()">
+                <div class="menu-bar-top" id="top"></div>
+                <div class="menu-bar-middle" id="mid"></div>
+                <div class="menu-bar-bottom" id="bot"></div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End of NAVBAR -->
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="Carousel\phy.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Physics</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="Carousel\RTC.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Technology</h5>
+                    <p>What's your super power?</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="Carousel\chem.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Chemistry</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="Carousel\bio.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Biology</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- End of Carousel -->
+
+    <!-- Empty link Cards -->
+    <div class="container my-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <a href="#" style="text-decoration: none; color: #340c5a;">
+                    <div class="card">
+                        <img src="emptyLinks\open_day.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Open Day</h5>
+                            <p class="card-text">NISER encourages the neighbouring school children to shape scientific
+                                minds
+                                by allowing them to visit the campus, sharing various models on open day every year.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" style="text-decoration: none; color: #340c5a;">
+                    <div class="card">
+                        <img src="emptyLinks\educational_visits.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Educational Visits of Schools</h5>
+                            <p class="card-text">Representatives from different Schools of NISER go to visit nearby
+                                educational institutes and help in the advancement of Science and Technological
+                                knowledge
+                                among them.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" style="text-decoration: none; color: #340c5a;">
+                    <div class="card">
+                        <img src="emptyLinks\vigyan_prathiba.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Teacher-training workshop: Vigyan Prathiba project</h5>
+                            <p class="card-text">Vigyan Pratibha aims at promoting talent among students, particularly
+                                among
+                                those from disadvantaged groups, enabling them to engage in doing quality science and
+                                mathematics.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End of Empty link Cards -->
+
+    <aside id="left_side">
+        <!-- News and announcements -->
+        <hr>
+        <h3>News and Announcements</h3>
+        <marquee direction="up" height="250px" scrollamount="5" onMouseOver="this.stop();" onMouseOut="this.start();">
+            <ul style="list-style-image:url('mic1.jpg');">
+                <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-primary"
+                            style="animation: blink 1s linear infinite;">New</span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit
+                        vel soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate sequi, beatae ut.</a>
+                </li><br>
+                <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-primary"
+                            style="animation: blink 1s linear infinite;">New</span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit
+                        vel soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate sequi, beatae ut.</a>
+                </li><br>
+                <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-danger">Old</span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit
+                        vel soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate sequi, beatae ut.</a>
+                </li><br>
+                <li><a href="#" style="text-decoration: none; color: #003311"><span class="badge bg-danger">Old</span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex incidunt quis reprehenderit
+                        vel soluta maxime accusantium unde voluptas excepturi ipsam neque quisquam esse a eaque
+                        voluptate sequi, beatae ut.</a>
+                </li><br>
+            </ul>
+        </marquee>
+        <hr>
+
+        <!-- Basic Content -->
+        <div class="infos">
+            <h3>About Us</h3>
+            <p style="text-align: justify">
+                Science outreach is all about communicating the importance and ideologies of Science with the
+                public. The general idea is to spread Science among the school students and teachers in a
+                captivating way which will be encouraging enough for them to think about a future in research or
+                education. NISER is mindful of its social responsibilities and has been reaching out to students
+                and teachers to motivate them in their Scientific pursuit.
+            </p>
+
+            <h3>Our vision</h3>
+            <p style="text-align: justify">
+                We believe that an exposure at the right time in one's career can ignite right minds in
+                learning and their scientific pursuit. With this in mind we invite teachers and students to have a
+                glimpse of the research environment at NISER and expose them to the concept of "Learning by
+                doing". NISER outreach activities provide a single window for facilities such as online and
+                offline education from school to undergraduate level, research programs, online portal for
+                various learning units for schools, online teachers' webinars, online and on-site teachers'
+                workshops etc.
+            </p>
+            <p style="text-align: justify">
+                NISER Open day program is introduced to invite people from various institutions/ schools can
+                to visit NISER in order to have a glimpse of the scientific exposure along with learning. NISER
+                Educational trips involve schools and college visits in different departments at NISER and
+                interact with the Scientific officers. NISER hosts the Odisha chapter of the Vigyan Pratibha
+                project in collaboration with Institute of Physics, Bhubaneswar and Homi Bhabha Centre for
+                Science Education (please check the full form), Mumbai and wherein teachers' training
+                workshops are being conducted.
+            </p>
+        </div>
+        <hr>
+    </aside>
+
+    <!-- Calendar -->
+    <aside id="right_side">
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="closeDetails()">&times;</div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="month">
+                <i class="prev"><</i>
+                        <div class="date">
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                        <i class="next">></i>
+            </div>
+            <div class="weekdays">
+                <div style="color: red;">Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days"></div>
+        </div>
+    </aside>
+    <!-- End of Calendar -->
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="galleryText">
+            <h1>Gallery</h1>
+        </div>
+        <div class="images">
+            <a href="gallery/image1.jpg" target="_blank"><img src="gallery/image1.jpg"></a>
+            <a href="gallery/image2.jpg" target="_blank"><img src="gallery/image2.jpg"></a>
+            <a href="gallery/image3.jpg" target="_blank"><img src="gallery/image3.jpg"></a>
+            <a href="gallery/image4.jpg" target="_blank"><img src="gallery/image4.jpg"></a>
+        </div>
+        <div class="images" style="margin-bottom: 70px;">
+            <a href="#"  target="_blank">
+                <button type="button" class="btn btn-primary" style="float:right">View All Images</button>
+            </a>
+        </div>
+    </div>
+    <!-- End of Gallery -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <h2>NISER Outreach Committee</h2>
+            <a class="social git" href="#" title="Link to GitHub" target="_blank"><i class="fab fa-git-alt"></i></a>
+            <a class="social facebook" href="#" title="Link to our Facebook Page" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a class="social insta" href="#" title="Link to our Instagram Page" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a class="social mail" href="#" title="Mail Us" target="_blank"><i class="far fa-envelope"></i></a>
+            <h3>National Institute of Science Education and Research</h3>
+            <h4>Bhubaneswar, India</h4>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

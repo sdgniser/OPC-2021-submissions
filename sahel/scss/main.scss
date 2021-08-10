@@ -1,0 +1,176 @@
+@import "variables";
+@import "base_styles";
+@import "menu";
+@import "gallery";
+
+body {
+  background-color: $primary-color;
+}
+
+html,
+body,
+main {
+  overflow-x: hidden;
+}
+
+.type-one {
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: $base-padding;
+  border-radius: $curvature;
+}
+
+.type-two {
+  color: $secondary-color;
+  padding: $base-padding;
+}
+
+header {
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: $base-padding;
+  border-bottom-left-radius: $curvature;
+  border-bottom-right-radius: $curvature;
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@include media-md {
+  header {
+    h1 {
+      font-size: 6rem;
+    }
+  }
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+section {
+  h2 {
+    font-size: 3.75rem;
+  }
+  p {
+    margin-top: $base-padding;
+    font-size: $content-font-size-mobile;
+  }
+}
+
+.section-icon {
+  margin-top: $base-padding;
+  margin-bottom: 1rem;
+  @include center-stuff;
+  i {
+    font-size: 8rem;
+  }
+}
+
+#what_we_do {
+  ul {
+    margin-top: $base-padding;
+    li {
+      margin-top: 1rem;
+      a {
+        font-size: 1.4rem;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+#event_calendar {
+  h3 {
+    font-size: 2rem;
+  }
+  ol {
+    margin-left: 1rem;
+    li {
+      font-size: $content-font-size-mobile;
+    }
+  }
+}
+
+#news_and_announcements {
+  ul {
+    margin-top: $base-padding;
+    height: 300px;
+    overflow-y: scroll;
+    border: solid 1px $secondary-color;
+    border-radius: $curvature;
+    li {
+      font-size: $content-font-size-mobile;
+      margin: 1.1rem;
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 3rem 0;
+  @include center-stuff;
+  img {
+    width: 150px;
+  }
+}
+
+@include media-md {
+  footer {
+    img {
+      width: 200px;
+    }
+  }
+}
+
+.on-scroll {
+  opacity: 0;
+  transform: translateX(-50%);
+  @include ease-transitions;
+}
+
+.on-scroll-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@include media-md {
+  section {
+    h2 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 1.3rem;
+      line-height: 2.3rem;
+    }
+    .icon-and-content {
+      display: flex;
+      .section-icon {
+        order: 1;
+        width: 40%;
+        i {
+          font-size: 12rem;
+        }
+      }
+      .content {
+        order: 0;
+        width: 60%;
+      }
+    }
+  }
+  #news_and_announcements {
+    .section-icon {
+      display: none;
+    }
+  }
+  #even_calendar {
+    ol {
+      li {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

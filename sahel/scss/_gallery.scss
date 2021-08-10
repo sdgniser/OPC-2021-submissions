@@ -1,0 +1,32 @@
+@import "variables";
+
+#gallery {
+  #inner-container {
+    display: flex;
+    @include ease-transitions;
+    width: 100%;
+    img {
+      min-width: 100%;
+      @include ease-transitions;
+    }
+    .hide {
+      opacity: 0;
+    }
+  }
+
+  #outer-container {
+    position: relative;
+    margin-top: 2rem;
+    i {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 4rem;
+    }
+    .fa-arrow-right {
+      right: 2rem;
+    }
+    .fa-arrow-left {
+      left: 2rem;
+    }
+  }
+}

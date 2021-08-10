@@ -1,0 +1,81 @@
+/*--- big tablet to 1200px----*/
+
+@media only screen and (max-width: 1200px) {
+    .head-textbox {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row {padding: 0 2%}
+    
+}
+
+
+/*--- small tablets to big tablets: from 768px to 1023px ----*/
+
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px;}
+    secction {padding: 60px 0;}
+    
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .steps-box {margin: 10px;}
+    .steps-box:last-child {margin: 10px;}
+    .work-steps {margin-bottom: 40px;}
+    .work-steps {margin-bottom: 60px;}
+    .atom {width: 70%;
+    margin-left: 13%;}
+    .contact-form {width: 80%;}
+}
+
+
+/*--- small phones to small tablets: from 481px to 767px ----*/
+
+@media only screen and (max-width: 767px) {
+    body {font-size: 15.5px;}
+    section {padding: 30px 0;}
+
+    .row,
+    .head-textbox {
+        padding: 0 4%;
+    }
+    
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    
+    
+    h1 {font-size: 180%;}
+    h2,
+    h3 {font-size: 150%}
+    
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .atom {width: 70%;}
+    .steps-box:first-child {
+        text-align: center;
+    }
+    
+    .work-steps div {
+        height: 40px;
+        width: 40px;
+        margin: 15px;
+        padding: 4px;
+        font-size: 120%;
+    }
+    
+    .work-steps {margin-bottom: 20px;}
+    .work-steps:last-of-type {margin-bottom: 20px;}
+    
+}
+
+/*--- small phones: from 0 to 480px ----*/
+
+@media only screen and (max-width: 480px) {
+    .contact-form {width: 100%;}   
+    
+}
